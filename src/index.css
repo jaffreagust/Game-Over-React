@@ -1,0 +1,51 @@
+.mas_vendidos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: auto;
+  place-content: center;
+  padding-left: 1.18vw;
+  padding-right: 1.18vw;
+}
+
+.gamebox{
+color: #FFFFFF;
+background-color: #191E29;
+width: 23%;
+min-width:35vh;
+max-width:41.47vh;
+height: 23.3vh;
+margin: 1.18vh 1.18vh 1.18vh 1.18vh;
+display: flex;
+flex-wrap: wrap;
+border-radius: 2.08vh;
+justify-content: space-between;
+flex-grow: 0;
+flex-shrink: 0;
+box-shadow: 0 0 15px #000;
+}
+
+.gamebox img{
+  width: 100%;
+  height: 100%;
+  max-height: 18.47vh;
+  border-radius: 2.08vh 2.08vh 0 0;
+  object-fit: fill;
+  flex-shrink: 0;
+  vertical-align: top;
+}
+
+.gamebox_text{
+  font-family: 'Victor-Mono';
+  padding-left: 1.7vh;
+  font-size: calc(1.38vh + 0.3rem) ;
+}
+
+.gamebox_price{
+  font-family: 'Inter';
+  text-align: right;
+  font-size: calc(1.38vh + 0.3rem);
+  padding: 0 1.7vh 0 0;
+}
+
+
