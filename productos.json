@@ -1,0 +1,63 @@
+[
+    
+      {
+        "nombre": "Rocket League",
+        "precio": 70,
+        "imagen": "src/Images/Rocket_League.png"
+      },
+
+      {
+        "nombre": "Modern Warfare II",
+        "precio": 69,
+        "imagen": "src/Images/modern_warfare_2.png"
+      },
+
+      {
+        "nombre": "The Quarry",
+        "precio": 69,
+        "imagen": "src/Images/the_quarry.png"
+      },
+
+      {
+        "nombre": "Gotham Knights",
+        "precio": 69,
+        "imagen": "src/Images/gotham_knights.jpeg"
+      },
+
+      {
+        "nombre": "God Of War Ragnarok",
+        "precio": 60,
+        "imagen": "src/Images/gow_ragnarok.jpeg"
+      },
+
+      {
+        "nombre": "FIFA 23",
+        "precio": 59,
+        "imagen": "src/Images/fifa23.png"
+      },
+
+      {
+        "nombre": "Resident Evil Village",
+        "precio": 39,
+        "imagen": "src/Images/resident_evil_village.avif"
+      },
+
+      {
+        "nombre": "HITMAN III",
+        "precio": 20,
+        "imagen": "src/Images/hitman_III.jpeg"
+      },
+
+      {
+        "nombre": "Grim Fandango",
+        "precio": 14,
+        "imagen": "src/Images/grim_fandango.jpeg"
+      },
+
+      {
+        "nombre": "The Witcher 3",
+        "precio": 39,
+        "imagen": "src/Images/the_witcher_3.jpeg"
+      }
+
+]
