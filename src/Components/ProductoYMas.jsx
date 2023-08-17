@@ -8,16 +8,31 @@ import fifa23 from '../Images/fifa23.png'
 import cod from '../Images/modern_warfare_2.png'
 import carrito from '../Images/carritoverde.png'
 
+const windowLocationSearch = window.location.search
+
+const urlParams = new URLSearchParams(windowLocationSearch)
+
+const imagen = urlParams.get('imagen')
+const nombre = urlParams.get('nombre')
+const precio = urlParams.get('precio')
+const descripcion = urlParams.get('descripcion')
+const devs = urlParams.get('devs')
+console.log(imagen)
+console.log(nombre)
+console.log(precio)
+console.log(descripcion)
+console.log(devs)
+
 function ProductoYMas (){
     return    <div className="producto_y_relacionado main">
 
         <div className="producto_grande">
-            <img src={cod}/>
+            <img src={imagen}/>
             <div className="datos_productogrande">
-            <div className="precio_productogrande">$69</div>
-            <div className="nombre_productogrande">Modern Warfare II</div>
-            <div className="descripcion_productogrande">Modern Warfare II trae un juego de última generación para los fanáticos con un manejo de armas completamente nuevo, una nueva armería y otras innovaciones gráficas y de juego que disparan la franquicia a nuevas alturas.</div>
-            <div className="desarrolladora_productogrande">Activision</div>
+            <div className="precio_productogrande">${precio}</div>
+            <div className="nombre_productogrande">{nombre}</div>
+            <div className="descripcion_productogrande">{descripcion}</div>
+            <div className="desarrolladora_productogrande">{devs}</div>
             <div className="btn_carritoproductogrande">
                 <div style={{fontSize: "2.5vh",color: "white",alignSelf:"center",textShadow: "#03B384 1px 0 15px",fontWeight: "bolder"}}>+</div>
                 <div className="carritoverde"><img src={carrito} style={{width: "4.5vh",height: "auto", filter:"dropShadow(1px 0 5px #03B384)"}}/></div>

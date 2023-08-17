@@ -3,61 +3,81 @@
       {
         "nombre": "Rocket League",
         "precio": 70,
-        "imagen": "src/Images/Rocket_League.png"
+        "imagen": "src/Images/Rocket_League.png",
+        "descripcion": "Rocket League es un videojuego que combina el fútbol con los vehículos. Fue desarrollado por Psyonix y lanzado el 7 de julio de 2015. Fue lanzado Free to play en septiembre de 2020. Se encuentra disponible en español, y tiene modos de juego cooperativo, de un jugador y en línea.",
+        "devs": "Psyonix"
       },
 
       {
         "nombre": "Modern Warfare II",
         "precio": 69,
-        "imagen": "src/Images/modern_warfare_2.png"
+        "imagen": "src/Images/modern_warfare_2.png",
+        "descripcion": "Modern Warfare II trae un juego de última generación para los fanáticos con un manejo de armas completamente nuevo, una nueva armería y otras innovaciones gráficas y de juego que disparan la franquicia a nuevas alturas.",
+        "devs": "Activision"
       },
 
       {
         "nombre": "The Quarry",
         "precio": 69,
-        "imagen": "src/Images/the_quarry.png"
+        "imagen": "src/Images/the_quarry.png",
+        "descripcion": "Cuando oscurece en el último día de campamento, nueve monitores se ven envueltos en una noche terrorífica. Solo hay una cosa más horrible que los lugareños cubiertos de sangre y las criaturas que les dan caza... las decisiones que tendrás que tomar si quieres que sobrevivan.",
+        "devs": "Supermassive Games"
       },
 
       {
         "nombre": "Gotham Knights",
         "precio": 69,
-        "imagen": "src/Images/gotham_knights.jpeg"
+        "imagen": "src/Images/gotham_knights.jpeg",
+        "descripcion": "Batman está muerto. Ahora depende de la Batifamilia, Batichica, Ala Nocturna, Capucha Roja y Robin, proteger Ciudad Gótica.",
+        "devs": "QLOC, WB Games Montréal"
       },
 
       {
         "nombre": "God Of War Ragnarok",
         "precio": 60,
-        "imagen": "src/Images/gow_ragnarok.jpeg"
+        "imagen": "src/Images/gow_ragnarok.jpeg",
+        "descripcion": "God of War Ragnarök es un videojuego de acción y aventuras desarrollado por Santa Monica Studio y publicado por Sony Interactive Entertainment. Se lanzó en todo el mundo el 9 de noviembre de 2022 para PlayStation 4 y PlayStation 5, lo que marca el primer lanzamiento entre generaciones de la serie.",
+        "devs": "SIE Santa Monica Studio"
       },
 
       {
         "nombre": "FIFA 23",
         "precio": 59,
-        "imagen": "src/Images/fifa23.png"
+        "imagen": "src/Images/fifa23.png",
+        "descripcion": "FIFA 23 es un videojuego de simulación de fútbol publicado por Electronic Arts. Es la trigésima entrega de la serie FIFA desarrollada por EA Sports, y la última entrega bajo el estandarte de FIFA.",
+        "devs": "EA Sports, Electronic Arts, EA Canada, EA Romania"
       },
 
       {
         "nombre": "Resident Evil Village",
         "precio": 39,
-        "imagen": "src/Images/resident_evil_village.avif"
+        "imagen": "src/Images/resident_evil_village.avif",
+        "descripcion": "Vive el survival horror como nunca antes en la 8.ª entrega principal de la aclamada serie Resident Evil: Resident Evil Village. El terror más realista e inescapable, con gráficos hiperdetallados, intensa acción en 1.ª persona y una trama magistral.",
+        "devs": "CAPCOM"
       },
 
       {
         "nombre": "HITMAN III",
         "precio": 20,
-        "imagen": "src/Images/hitman_III.jpeg"
+        "imagen": "src/Images/hitman_III.jpeg",
+        "descripcion": "Entra en el mundo del asesino definitivo. HITMAN: mundo del asesinato reúne lo mejor de HITMAN, HITMAN 2 y HITMAN 3. Incluye la campaña principal, contratos, intensificaciones, objetivos escurridizos y HITMAN: Freelancer, un modo inspirado en el género roguelike.",
+        "devs": " IO Interactive"
       },
 
       {
         "nombre": "Grim Fandango",
         "precio": 14,
-        "imagen": "src/Images/grim_fandango.jpeg"
+        "imagen": "src/Images/grim_fandango.jpeg",
+        "descripcion": "One of the most acclaimed adventure games of all time is now back, better than ever. Grim Fandango Remastered has the all the beautiful art and engaging story fans remember, but has also been remastered to look, sound, and control even better than the award-winning original release.",
+        "devs": "Lucasfilm Games"
       },
 
       {
         "nombre": "The Witcher 3",
         "precio": 39,
-        "imagen": "src/Images/the_witcher_3.jpeg"
+        "imagen": "src/Images/the_witcher_3.jpeg",
+        "descripcion": "Eres Geralt de Rivia, cazador de monstruos. En un continente devastado por la guerra e infestado de criaturas, tu misión es encontrar a Ciri, la niña de la profecía, un arma viviente que puede alterar el mundo tal y como lo conocemos.",
+        "devs": "CD Projekt, CD Projekt RED"
       }
 
 ]

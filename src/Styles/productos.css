@@ -11,7 +11,7 @@
 }
 
 .texto_titulo_productos{
-    font-family:'Inconsolata';
+    font-family:'Victor-Mono';
     font-size: 3.05vh;
     color: #FFFFFF;
     font-style: normal;
@@ -121,4 +121,17 @@
     width: calc(1.5*1em);
     align-items: center;
 
+  }
+
+  .noEncontrados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: none;
+    align-items: center;
+    font-family:'Victor-Mono';
+    color: white;
+    font-weight: 800;
+    font-size: 4vh;
+    margin-top: 15vh;
   }

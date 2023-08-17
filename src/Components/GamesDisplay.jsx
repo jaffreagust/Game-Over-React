@@ -34,7 +34,8 @@ export default function GamesDisplay() {
                 <a className="lupa" id="buscar" href="#"><img src={Lupa} style={{height: "60%", width: "60%"}}/></a>
                 </div>
             </div>
-            <h1 style={{color: "White", margin: "0 auto"}}>No se encontraron juegos</h1>
+            {/* <h1 style={{color: "White", margin: "0 auto"}}>No se encontraron juegos</h1> */}
+            <div className="noEncontrados">No se encontraron juegos</div>
         </div>
     )
   }
@@ -52,7 +53,7 @@ export default function GamesDisplay() {
     
         <div className='caja_productos main'>
             {GameList.map((game) => (
-                <GameBox nombre={game.nombre} precio={game.precio} imagen={game.imagen} index={game.index}/>
+                <GameBox nombre={game.nombre} precio={game.precio} imagen={game.imagen} index={game.index} descripcion={game.descripcion} devs={game.devs}/>
             ))}
         </div>
     </div>
