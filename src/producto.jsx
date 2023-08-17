@@ -11,7 +11,7 @@ import ProductoYMas from './Components/ProductoYMas'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-            <Header/>
+            <Header inicioVerde = {false} productosVerde = {false} balancesVerde = {false}/>
             <ProductoYMas/>
             <Footer/>
     </React.StrictMode>,

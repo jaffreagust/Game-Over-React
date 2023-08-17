@@ -11,8 +11,7 @@ import GamesDisplay from './Components/GamesDisplay'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <Header/>
-        {/* <SearchBar/> */}
+        <Header inicioVerde = {false} productosVerde = {true} balancesVerde = {false}/>
         <GamesDisplay/>
         <Footer/>
     </React.StrictMode>,

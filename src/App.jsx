@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <Header></Header>
+      <Header inicioVerde = {true} productosVerde = {false} balancesVerde = {false}></Header>
       <Slider></Slider>
       <TopSellers></TopSellers>
       <Footer></Footer>
