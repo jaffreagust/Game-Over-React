@@ -7,6 +7,9 @@ import gow from '../Images/gow_ragnarok.jpeg'
 import fifa23 from '../Images/fifa23.png'
 import cod from '../Images/modern_warfare_2.png'
 import carrito from '../Images/carritoverde.png'
+import gameList from '../../productos.json'
+import GameBox from './GameBox'
+import {useState, useEffect} from 'react'
 
 const windowLocationSearch = window.location.search
 
@@ -17,13 +20,16 @@ const nombre = urlParams.get('nombre')
 const precio = urlParams.get('precio')
 const descripcion = urlParams.get('descripcion')
 const devs = urlParams.get('devs')
-console.log(imagen)
-console.log(nombre)
-console.log(precio)
-console.log(descripcion)
-console.log(devs)
+const related = urlParams.get('related')
+
+
 
 function ProductoYMas (){
+
+    const [RelatedGameList, setRelatedGameList] = useState(gameList.filter((game)=>(related.toLowerCase().includes(game.nombre.toLowerCase()))))
+    console.log(RelatedGameList)
+
+
     return    <div className="producto_y_relacionado main">
 
         <div className="producto_grande">
@@ -44,37 +50,13 @@ function ProductoYMas (){
         <div className="juegos_relacionados">
                 <div className="texto_titulo_productos right-align" style={{fontFamily: 'Inconsolata',display: "flex",alignSelf: "center"}}>Juegos Relacionados</div>
                 <div className="caja_productos" style={{marginLeft: "0"}}>
-                <div className="caja_juego">
-                    <img src={residentEvil}/>
-                    <div className="caja_texto_juego">
-                    <div className="texto_juego">Resident Evil Village</div>
-                    <div className="texto_juego">$ 39</div>
-                    </div>
-                </div>
+            
+                {RelatedGameList.map((game) => (
+                    <GameBox nombre={game.nombre} precio={game.precio} imagen={game.imagen} index={game.index} descripcion={game.descripcion} devs={game.devs} related={game.related}/>
+                ))}
 
-                <div className="caja_juego">
-                    <img src={witcher3}/>
-                    <div className="caja_texto_juego">
-                    <div className="texto_juego">The Witcher 3</div>
-                    <div className="texto_juego">$ 39</div>
-                    </div>
-                </div>
 
-                <div className="caja_juego">
-                    <img src={gow}/>
-                    <div className="caja_texto_juego">
-                    <div className="texto_juego">God Of War Ragnarok</div>
-                    <div className="texto_juego">$ 60</div>
-                    </div>
-                </div>
-
-                <div className="caja_juego">
-                    <img src={fifa23}/>
-                    <div className="caja_texto_juego">
-                    <div className="texto_juego">FIFA 23</div>
-                    <div className="texto_juego">$ 59</div>
-                    </div>
-                </div>
+        
                 </div>
             </div>
         </div>

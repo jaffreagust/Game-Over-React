@@ -53,7 +53,7 @@ export default function GamesDisplay() {
     
         <div className='caja_productos main'>
             {GameList.map((game) => (
-                <GameBox nombre={game.nombre} precio={game.precio} imagen={game.imagen} index={game.index} descripcion={game.descripcion} devs={game.devs}/>
+                <GameBox nombre={game.nombre} precio={game.precio} imagen={game.imagen} index={game.index} descripcion={game.descripcion} devs={game.devs} related={game.related}/>
             ))}
         </div>
     </div>
