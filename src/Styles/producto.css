@@ -20,6 +20,10 @@
     margin-top: 4.5vh;
 }
 
+.producto_grande:hover{
+    transform: scale(1.05);
+}
+
 .producto_grande img{
     height: 32vh;
     width: 100%;
