@@ -25,6 +25,10 @@ flex-shrink: 0;
 box-shadow: 0 0 15px #000;
 }
 
+.gamebox:hover{
+  transform: scale(1.05);
+}
+
 .gamebox img{
   width: 100%;
   height: 100%;

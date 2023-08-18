@@ -1,54 +1,43 @@
 import '../../Styles/global.css'
-import '../../Styles/home.css'
+import '../../Styles/index.css'
+import {useState, useEffect} from 'react'
+import GameBox from '../GameBox'
+import gameList from '../../../topsellers.json'
 import residentEvil from '../../Images/resident_evil_village.avif'
 import gothamKnights from '../../Images/gotham_knights.jpeg'
 import fifa23 from '../../Images/fifa23.png'
 import hitmanIII from '../../Images/hitman_III.jpeg'
+
+
+export function GamesTopSell(props) {
+  return (
+    
+    <a className="gamebox" key={props.index} href={'../../producto.html?imagen=' + props.imagen + '&nombre=' + props.nombre + '&precio=' + props.precio + '&descripcion=' + props.descripcion + '&devs=' + props.devs}>
+        <img src={props.imagen}/>
+        <div className="gamebox_text">
+          {props.nombre}
+        </div>
+          <div className="gamebox_price">$ {props.precio}
+        </div>
+      </a>
+  )
+}
+
+
+
 function TopSellers(){
+  const [GameList, setGameList] = useState([])
+  useEffect(() =>{
+    setGameList(gameList)
+  })
     return<> <div className="texto_normal center" style={{textShadow:"0px 0px 15px #000000",   marginBottom: "4vh"}}>
             Más vendidos
             </div>
 
   <div className="mas_vendidos main">
-    <div className="gamebox">
-      <img src={residentEvil}/>
-      <div className="gamebox_text">
-        Resident Evil Village
-      </div>
-      <div className="gamebox_price">
-        $39
-      </div>
-    </div>
-
-    <div className="gamebox">
-      <img src={gothamKnights}/>
-      <div className="gamebox_text">
-        Gotham Knights
-      </div>
-      <div className="gamebox_price">
-        $69
-      </div>
-    </div>
-
-    <div className="gamebox">
-      <img src={fifa23}/>
-      <div className="gamebox_text">
-        FIFA 23
-      </div>
-      <div className="gamebox_price">
-        $59
-      </div>
-    </div>
-
-    <div className="gamebox">
-      <img src={hitmanIII}/>
-      <div className="gamebox_text">
-        HITMAN III
-      </div>
-      <div className="gamebox_price">
-        $29
-      </div>
-    </div>
+    {GameList.map((game) => (
+      <GamesTopSell nombre={game.nombre} precio={game.precio} imagen={game.imagen} index={game.index} descripcion={game.descripcion} devs={game.devs}/>
+    ))}
   </div>
   </>
 }

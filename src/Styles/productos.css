@@ -37,7 +37,11 @@
     flex-wrap: wrap;
     border-radius: 2.08vh;
 }
-  
+
+    .caja_juego:hover{
+    transform: scale(1.05);
+  }
+
   .caja_juego img{
       width: 100%;
       height: 80%;

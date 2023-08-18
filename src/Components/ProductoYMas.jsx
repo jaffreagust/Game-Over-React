@@ -1,13 +1,15 @@
 import '../Styles/global.css'
 import '../Styles/productos.css'
 import '../Styles/producto.css'
+import {useState, useEffect} from 'react'
+import GameBox from './GameBox'
+import gameList from '../../producto.json'
 import residentEvil from '../Images/resident_evil_village.avif'
 import witcher3 from '../Images/the_witcher_3.jpeg'
 import gow from '../Images/gow_ragnarok.jpeg'
 import fifa23 from '../Images/fifa23.png'
 import cod from '../Images/modern_warfare_2.png'
 import carrito from '../Images/carritoverde.png'
-import gameList from '../../productos.json'
 import GameBox from './GameBox'
 import {useState, useEffect} from 'react'
 
@@ -27,7 +29,7 @@ const related = urlParams.get('related')
 function ProductoYMas (){
 
     const [RelatedGameList, setRelatedGameList] = useState(gameList.filter((game)=>(related.toLowerCase().includes(game.nombre.toLowerCase()))))
-    console.log(RelatedGameList)
+
 
 
     return    <div className="producto_y_relacionado main">
@@ -60,5 +62,6 @@ function ProductoYMas (){
                 </div>
             </div>
         </div>
+        
 }
 export default ProductoYMas
