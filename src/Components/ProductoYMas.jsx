@@ -1,6 +1,9 @@
 import '../Styles/global.css'
 import '../Styles/productos.css'
 import '../Styles/producto.css'
+import {useState, useEffect} from 'react'
+import GameBox from './GameBox'
+import gameList from '../../producto.json'
 import residentEvil from '../Images/resident_evil_village.avif'
 import witcher3 from '../Images/the_witcher_3.jpeg'
 import gow from '../Images/gow_ragnarok.jpeg'
@@ -24,7 +27,12 @@ console.log(descripcion)
 console.log(devs)
 
 function ProductoYMas (){
-    return    <div className="producto_y_relacionado main">
+    const [GameList, setGameList] = useState([])
+    useEffect(() =>{
+            setGameList(gameList)
+    })
+
+    return(    <div className="producto_y_relacionado main">
 
         <div className="producto_grande">
             <img src={imagen}/>
@@ -44,39 +52,12 @@ function ProductoYMas (){
         <div className="juegos_relacionados">
                 <div className="texto_titulo_productos right-align" style={{fontFamily: 'Inconsolata',display: "flex",alignSelf: "center"}}>Juegos Relacionados</div>
                 <div className="caja_productos" style={{marginLeft: "0"}}>
-                <div className="caja_juego">
-                    <img src={residentEvil}/>
-                    <div className="caja_texto_juego">
-                    <div className="texto_juego">Resident Evil Village</div>
-                    <div className="texto_juego">$ 39</div>
-                    </div>
-                </div>
-
-                <div className="caja_juego">
-                    <img src={witcher3}/>
-                    <div className="caja_texto_juego">
-                    <div className="texto_juego">The Witcher 3</div>
-                    <div className="texto_juego">$ 39</div>
-                    </div>
-                </div>
-
-                <div className="caja_juego">
-                    <img src={gow}/>
-                    <div className="caja_texto_juego">
-                    <div className="texto_juego">God Of War Ragnarok</div>
-                    <div className="texto_juego">$ 60</div>
-                    </div>
-                </div>
-
-                <div className="caja_juego">
-                    <img src={fifa23}/>
-                    <div className="caja_texto_juego">
-                    <div className="texto_juego">FIFA 23</div>
-                    <div className="texto_juego">$ 59</div>
-                    </div>
-                </div>
+                {GameList.map((game) => (
+                <GameBox nombre={game.nombre} precio={game.precio} imagen={game.imagen} index={game.index} descripcion={game.descripcion} devs={game.devs}/>
+                ))}
                 </div>
             </div>
         </div>
+        )
 }
 export default ProductoYMas

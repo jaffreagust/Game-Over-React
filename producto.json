@@ -1,0 +1,35 @@
+[
+    
+    {
+      "nombre": "God Of War Ragnarok",
+      "precio": 60,
+      "imagen": "src/Images/gow_ragnarok.jpeg",
+      "descripcion": "God of War Ragnarök es un videojuego de acción y aventuras desarrollado por Santa Monica Studio y publicado por Sony Interactive Entertainment. Se lanzó en todo el mundo el 9 de noviembre de 2022 para PlayStation 4 y PlayStation 5, lo que marca el primer lanzamiento entre generaciones de la serie.",
+      "devs": "SIE Santa Monica Studio"
+    },
+
+    {
+      "nombre": "FIFA 23",
+      "precio": 59,
+      "imagen": "src/Images/fifa23.png",
+      "descripcion": "FIFA 23 es un videojuego de simulación de fútbol publicado por Electronic Arts. Es la trigésima entrega de la serie FIFA desarrollada por EA Sports, y la última entrega bajo el estandarte de FIFA.",
+      "devs": "EA Sports, Electronic Arts, EA Canada, EA Romania"
+    },
+
+    {
+      "nombre": "Resident Evil Village",
+      "precio": 39,
+      "imagen": "src/Images/resident_evil_village.avif",
+      "descripcion": "Vive el survival horror como nunca antes en la 8.ª entrega principal de la aclamada serie Resident Evil: Resident Evil Village. El terror más realista e inescapable, con gráficos hiperdetallados, intensa acción en 1.ª persona y una trama magistral.",
+      "devs": "CAPCOM"
+    },
+
+    {
+      "nombre": "The Witcher 3",
+      "precio": 39,
+      "imagen": "src/Images/the_witcher_3.jpeg",
+      "descripcion": "Eres Geralt de Rivia, cazador de monstruos. En un continente devastado por la guerra e infestado de criaturas, tu misión es encontrar a Ciri, la niña de la profecía, un arma viviente que puede alterar el mundo tal y como lo conocemos.",
+      "devs": "CD Projekt, CD Projekt RED"
+    }
+
+]
