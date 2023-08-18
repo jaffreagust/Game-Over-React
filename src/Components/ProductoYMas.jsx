@@ -3,15 +3,13 @@ import '../Styles/productos.css'
 import '../Styles/producto.css'
 import {useState, useEffect} from 'react'
 import GameBox from './GameBox'
-import gameList from '../../producto.json'
+import gameList from '../../productos.json'
 import residentEvil from '../Images/resident_evil_village.avif'
 import witcher3 from '../Images/the_witcher_3.jpeg'
 import gow from '../Images/gow_ragnarok.jpeg'
 import fifa23 from '../Images/fifa23.png'
 import cod from '../Images/modern_warfare_2.png'
 import carrito from '../Images/carritoverde.png'
-import GameBox from './GameBox'
-import {useState, useEffect} from 'react'
 
 const windowLocationSearch = window.location.search
 
