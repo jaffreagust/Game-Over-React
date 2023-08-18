@@ -4,7 +4,8 @@
         "precio": 59,
         "imagen": "src/Images/fifa23.png",
         "descripcion": "FIFA 23 es un videojuego de simulación de fútbol publicado por Electronic Arts. Es la trigésima entrega de la serie FIFA desarrollada por EA Sports, y la última entrega bajo el estandarte de FIFA.",
-        "devs": "EA Sports, Electronic Arts, EA Canada, EA Romania"
+        "devs": "EA Sports, Electronic Arts, EA Canada, EA Romania",
+        "related": "Gotham Knights, Rocket League, HITMAN III, The WItcher 3"
       },
   
       {
@@ -12,7 +13,8 @@
         "precio": 39,
         "imagen": "src/Images/resident_evil_village.avif",
         "descripcion": "Vive el survival horror como nunca antes en la 8.ª entrega principal de la aclamada serie Resident Evil: Resident Evil Village. El terror más realista e inescapable, con gráficos hiperdetallados, intensa acción en 1.ª persona y una trama magistral.",
-        "devs": "CAPCOM"
+        "devs": "CAPCOM",
+        "related": "God Of War Ragnarok, HITMAN III, The Witcher 3, The Quarry"
       },
 
       {
@@ -20,7 +22,8 @@
         "precio": 69,
         "imagen": "src/Images/gotham_knights.jpeg",
         "descripcion": "Batman está muerto. Ahora depende de la Batifamilia, Batichica, Ala Nocturna, Capucha Roja y Robin, proteger Ciudad Gótica.",
-        "devs": "QLOC, WB Games Montréal"
+        "devs": "QLOC, WB Games Montréal",
+        "related": "Rocket League, God Of War Ragnarok, The Witcher III, Grim Fandango"
       },
 
       {
@@ -28,6 +31,7 @@
         "precio": 20,
         "imagen": "src/Images/hitman_III.jpeg",
         "descripcion": "Entra en el mundo del asesino definitivo. HITMAN: mundo del asesinato reúne lo mejor de HITMAN, HITMAN 2 y HITMAN 3. Incluye la campaña principal, contratos, intensificaciones, objetivos escurridizos y HITMAN: Freelancer, un modo inspirado en el género roguelike.",
-        "devs": " IO Interactive"
+        "devs": " IO Interactive",
+        "related": "Rocket League, God Of War Ragnarok, The Witcher 3, Grim Fandango"
       }
 ]

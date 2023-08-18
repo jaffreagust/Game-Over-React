@@ -12,7 +12,7 @@ import hitmanIII from '../../Images/hitman_III.jpeg'
 export function GamesTopSell(props) {
   return (
     
-    <a className="gamebox" key={props.index} href={'../../producto.html?imagen=' + props.imagen + '&nombre=' + props.nombre + '&precio=' + props.precio + '&descripcion=' + props.descripcion + '&devs=' + props.devs}>
+    <a className="gamebox" key={props.index} href={'../../producto.html?imagen=' + props.imagen + '&nombre=' + props.nombre + '&precio=' + props.precio + '&descripcion=' + props.descripcion + '&devs=' + props.devs+ '&related=' + props.related}>
         <img src={props.imagen}/>
         <div className="gamebox_text">
           {props.nombre}
@@ -30,16 +30,16 @@ function TopSellers(){
   useEffect(() =>{
     setGameList(gameList)
   })
-    return<> <div className="texto_normal center" style={{textShadow:"0px 0px 15px #000000",   marginBottom: "4vh"}}>
+    return(<> <div className="texto_normal center" style={{textShadow:"0px 0px 15px #000000",   marginBottom: "4vh"}}>
             Más vendidos
             </div>
 
   <div className="mas_vendidos main">
     {GameList.map((game) => (
-      <GamesTopSell nombre={game.nombre} precio={game.precio} imagen={game.imagen} index={game.index} descripcion={game.descripcion} devs={game.devs}/>
+      <GamesTopSell nombre={game.nombre} precio={game.precio} imagen={game.imagen} index={game.index} descripcion={game.descripcion} devs={game.devs} related={game.related}/>
     ))}
   </div>
-  </>
+  </>)
 }
 
 export default TopSellers

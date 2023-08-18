@@ -8,7 +8,7 @@ import Footer from './Components/Footer/Footer'
 
     ReactDOM.createRoot(document.getElementById('root')).render(
         <React.StrictMode>
-        <Header inicioVerde = {false} productosVerde = {false} balancesVerde = {true}/>
+        <Header inicioVerde = {false} productosVerde = {false} balancesVerde = {false}/>
         <Balance/> 
         <Footer/>
     </React.StrictMode>,
