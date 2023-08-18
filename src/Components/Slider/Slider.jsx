@@ -1,4 +1,4 @@
-import GameOver from '../../Images/fallout4-please-stand-by.gif'
+import GameOver from '../../Images/game-over-glitch.gif'
 import '../../Styles/global.css'
 
 function Slider() {
